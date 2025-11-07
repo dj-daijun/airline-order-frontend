@@ -1,5 +1,6 @@
 .page-container {
   padding: 24px;
+  background-color: #f8f9fa; // 添加浅灰色背景
 }
 
 .page-header {
@@ -7,4 +8,47 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
+  
+  h1 {
+    color: #1890ff; // 标题改为蓝色
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  button {
+    background-color: #ff4d4f; // 退出按钮改为红色
+    border-color: #ff4d4f;
+    color: white;
+    
+    &:hover {
+      background-color: #ff7875;
+      border-color: #ff7875;
+    }
+  }
+}
+
+// 为表格添加一些样式
+nz-table {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // 添加阴影
+  
+  th {
+    background-color: #fafafa; // 表头浅灰色背景
+    color: #333;
+    font-weight: 600;
+  }
+  
+  td {
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  // 为操作链接添加颜色
+  a {
+    color: #1890ff;
+    
+    &:hover {
+      color: #40a9ff;
+    }
+  }
 }
